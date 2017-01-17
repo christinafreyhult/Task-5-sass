@@ -1,0 +1,24 @@
+.page_footer {
+    width: 90%;
+    border-top: solid 2px $divider;
+    margin: 50px auto 0;
+}
+
+        
+.bottom-nav {
+    display: none;
+    @media #{$medium-screen}{
+        display: inline;
+        float: right;
+        margin: 0;
+        li {
+            padding: 12px 0;
+            display: inline-block;
+            background-color: $list-background;
+            margin: auto 20px;
+            a {
+                font-size: 0.8em;
+            }
+        }
+    }
+}

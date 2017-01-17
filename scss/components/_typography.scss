@@ -1,0 +1,74 @@
+h1 {
+    @include text-styling(1.6em, 700);
+    @media #{$medium-screen}{
+        @include text-styling(1.5em);
+    }
+}
+
+h2 {
+    @include text-styling(1.3em, 800);
+    @media #{$medium-screen}{
+         @include text-styling(1.1em);
+    }
+}
+
+h3 {
+    @include text-styling(1.5em, 400);
+    @media #{$medium-screen}{
+         @include text-styling(1.3em);
+    }
+}
+
+p {
+    @include text-styling(1.1em, 300, $height:1.5);
+    .portfolio_wrapper &{
+        margin: 0 auto 50px;
+        width: 75%;
+         @media #{$medium-screen}{
+              @include text-styling(0.9em);
+         }
+         @media #{$large-screen}{
+             width: 80%;
+        }
+    }
+}
+
+a {
+   text-decoration: none;
+    color: $dark-base;
+}
+
+#toplink {
+    @include text-styling(1.1em, 800, $height:1.5);
+    margin: 16px 0;
+    float: right;
+    @media #{$medium-screen}{
+        display: none;
+    }
+}
+
+#contact_text {
+    width: 85%;
+    margin: 0 auto 40px;
+    @include text-styling(1.2em, $color:$medium-base);
+    @media #{$medium-screen}{
+        width: 70%;
+    }
+}
+
+.contact_label {
+    @include text-styling(1.3em, $color:$medium-base);
+    margin-right: 20px;
+}
+
+.contact_info {
+    @include text-styling(1.3em, 800, $medium-base);
+}
+
+.footer_name {
+    @include text-styling(1.1em, 800);
+    float: left;
+    @media #{$medium-screen}{
+        @include text-styling(0.9em);
+    }
+}

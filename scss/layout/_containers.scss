@@ -1,0 +1,55 @@
+.bio {
+    padding-top: 40px;
+    padding-bottom: 60px;
+    color: $medium-base;
+     @media #{$medium-screen}{
+        width: 55%;
+        float: left;
+        padding-top: 0;
+        margin-top: 0;
+        text-align: left;
+    }
+    @media #{$medium-screen}{
+        width: 60%;
+    }
+}
+
+.clearfix::after {
+    @media #{$medium-screen}{ 
+        content: "";
+        display: table;
+        clear: both;
+    }    
+} 
+    
+.col {
+    @media #{$medium-screen}{
+        display: inline-block;
+        width: 50%;
+        margin-right: -5px;
+        vertical-align: top;
+    }
+    @media #{$large-screen}{
+       width: 33%; 
+    }
+}
+
+.portfolio_wrapper {
+    background-color: $light-base;
+    padding: 60px 0;
+    margin: 0 auto 60px;
+}
+
+#portfolio,
+#contact {
+    margin-bottom: 60px;
+}
+
+.skill_list {
+    margin-bottom: 50px;
+}
+
+.contact_label,
+.contact_info {    
+    display: inline-block;
+}

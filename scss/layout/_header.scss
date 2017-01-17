@@ -1,0 +1,18 @@
+.page-header{
+    text-align: center;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.header-name {
+    @media #{$medium-screen}{
+        display: block;
+        margin: 20px auto;
+        }
+    @media #{$large-screen}{
+         float: left;
+    }
+}
+
+
+

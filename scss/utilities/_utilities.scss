@@ -1,0 +1,20 @@
+// Media query breakpoints
+$medium-screen: '(min-width: 768px)';
+$large-screen:  '(min-width: 1024px)';
+
+//color library
+$dark-base:     black;
+$medium-base:   dimgrey;
+$divider:       lightgrey;
+$list-background: #f7f5f0;
+$light-base:    white;
+$pop:           rosybrown;
+
+//mixin for typography
+
+@mixin text-styling($size, $weight:null, $color:null, $height:null){
+    font-size: $size;
+    font-weight: $weight;
+    color: $color;
+    line-height: $height;
+}

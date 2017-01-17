@@ -1,0 +1,338 @@
+/* line 1, C:/Users/Christina/Documents/GitHub/Task-5/scss/base/_base.scss */
+body {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  font-family: 'Open Sans', sans-serif;
+  background: white;
+}
+
+/* line 8, C:/Users/Christina/Documents/GitHub/Task-5/scss/base/_base.scss */
+body ul {
+  list-style: none;
+  margin-bottom: 50px;
+}
+
+/* line 13, C:/Users/Christina/Documents/GitHub/Task-5/scss/base/_base.scss */
+body li {
+  padding: 18px 0;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  background-color: white;
+}
+
+/* line 18, C:/Users/Christina/Documents/GitHub/Task-5/scss/base/_base.scss */
+body li a {
+  display: inline-block;
+  font-weight: 700;
+  font-size: 1.2em;
+}
+
+@media (min-width: 768px) {
+  /* line 18, C:/Users/Christina/Documents/GitHub/Task-5/scss/base/_base.scss */
+  body li a {
+    font-size: 1em;
+  }
+}
+
+/* line 1, C:/Users/Christina/Documents/GitHub/Task-5/scss/layout/_header.scss */
+.page-header {
+  text-align: center;
+  width: 90%;
+  margin: 0 auto;
+}
+
+@media (min-width: 768px) {
+  /* line 7, C:/Users/Christina/Documents/GitHub/Task-5/scss/layout/_header.scss */
+  .header-name {
+    display: block;
+    margin: 20px auto;
+  }
+}
+
+@media (min-width: 1024px) {
+  /* line 7, C:/Users/Christina/Documents/GitHub/Task-5/scss/layout/_header.scss */
+  .header-name {
+    float: left;
+  }
+}
+
+@media (min-width: 1024px) {
+  /* line 1, C:/Users/Christina/Documents/GitHub/Task-5/scss/layout/_navigation.scss */
+  .main-nav {
+    float: right;
+  }
+}
+
+@media (min-width: 768px) {
+  /* line 6, C:/Users/Christina/Documents/GitHub/Task-5/scss/layout/_navigation.scss */
+  .main-nav li {
+    display: inline-block;
+    background-color: #f7f5f0;
+    margin: auto 20px;
+  }
+  /* line 10, C:/Users/Christina/Documents/GitHub/Task-5/scss/layout/_navigation.scss */
+  .main-nav li a {
+    border-bottom: 2px solid rosybrown;
+  }
+}
+
+/* line 1, C:/Users/Christina/Documents/GitHub/Task-5/scss/layout/_containers.scss */
+.bio {
+  padding-top: 40px;
+  padding-bottom: 60px;
+  color: dimgrey;
+}
+
+@media (min-width: 768px) {
+  /* line 1, C:/Users/Christina/Documents/GitHub/Task-5/scss/layout/_containers.scss */
+  .bio {
+    width: 55%;
+    float: left;
+    padding-top: 0;
+    margin-top: 0;
+    text-align: left;
+  }
+}
+
+@media (min-width: 768px) {
+  /* line 1, C:/Users/Christina/Documents/GitHub/Task-5/scss/layout/_containers.scss */
+  .bio {
+    width: 60%;
+  }
+}
+
+@media (min-width: 768px) {
+  /* line 17, C:/Users/Christina/Documents/GitHub/Task-5/scss/layout/_containers.scss */
+  .clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
+@media (min-width: 768px) {
+  /* line 25, C:/Users/Christina/Documents/GitHub/Task-5/scss/layout/_containers.scss */
+  .col {
+    display: inline-block;
+    width: 50%;
+    margin-right: -5px;
+    vertical-align: top;
+  }
+}
+
+@media (min-width: 1024px) {
+  /* line 25, C:/Users/Christina/Documents/GitHub/Task-5/scss/layout/_containers.scss */
+  .col {
+    width: 33%;
+  }
+}
+
+/* line 37, C:/Users/Christina/Documents/GitHub/Task-5/scss/layout/_containers.scss */
+.portfolio_wrapper {
+  background-color: white;
+  padding: 60px 0;
+  margin: 0 auto 60px;
+}
+
+/* line 43, C:/Users/Christina/Documents/GitHub/Task-5/scss/layout/_containers.scss */
+#portfolio,
+#contact {
+  margin-bottom: 60px;
+}
+
+/* line 48, C:/Users/Christina/Documents/GitHub/Task-5/scss/layout/_containers.scss */
+.skill_list {
+  margin-bottom: 50px;
+}
+
+/* line 52, C:/Users/Christina/Documents/GitHub/Task-5/scss/layout/_containers.scss */
+.contact_label,
+.contact_info {
+  display: inline-block;
+}
+
+/* line 1, C:/Users/Christina/Documents/GitHub/Task-5/scss/layout/_footer.scss */
+.page_footer {
+  width: 90%;
+  border-top: solid 2px lightgrey;
+  margin: 50px auto 0;
+}
+
+/* line 8, C:/Users/Christina/Documents/GitHub/Task-5/scss/layout/_footer.scss */
+.bottom-nav {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  /* line 8, C:/Users/Christina/Documents/GitHub/Task-5/scss/layout/_footer.scss */
+  .bottom-nav {
+    display: inline;
+    float: right;
+    margin: 0;
+  }
+  /* line 14, C:/Users/Christina/Documents/GitHub/Task-5/scss/layout/_footer.scss */
+  .bottom-nav li {
+    padding: 12px 0;
+    display: inline-block;
+    background-color: #f7f5f0;
+    margin: auto 20px;
+  }
+  /* line 19, C:/Users/Christina/Documents/GitHub/Task-5/scss/layout/_footer.scss */
+  .bottom-nav li a {
+    font-size: 0.8em;
+  }
+}
+
+/* line 1, C:/Users/Christina/Documents/GitHub/Task-5/scss/components/_images.scss */
+img {
+  width: 90%;
+}
+
+/* line 5, C:/Users/Christina/Documents/GitHub/Task-5/scss/components/_images.scss */
+.profile_pic {
+  width: 60%;
+}
+
+@media (min-width: 768px) {
+  /* line 5, C:/Users/Christina/Documents/GitHub/Task-5/scss/components/_images.scss */
+  .profile_pic {
+    width: 40%;
+    max-width: 400px;
+    margin-bottom: 50px;
+    float: right;
+  }
+}
+
+/* line 1, C:/Users/Christina/Documents/GitHub/Task-5/scss/components/_typography.scss */
+h1 {
+  font-size: 1.6em;
+  font-weight: 700;
+}
+
+@media (min-width: 768px) {
+  /* line 1, C:/Users/Christina/Documents/GitHub/Task-5/scss/components/_typography.scss */
+  h1 {
+    font-size: 1.5em;
+  }
+}
+
+/* line 8, C:/Users/Christina/Documents/GitHub/Task-5/scss/components/_typography.scss */
+h2 {
+  font-size: 1.3em;
+  font-weight: 800;
+}
+
+@media (min-width: 768px) {
+  /* line 8, C:/Users/Christina/Documents/GitHub/Task-5/scss/components/_typography.scss */
+  h2 {
+    font-size: 1.1em;
+  }
+}
+
+/* line 15, C:/Users/Christina/Documents/GitHub/Task-5/scss/components/_typography.scss */
+h3 {
+  font-size: 1.5em;
+  font-weight: 400;
+}
+
+@media (min-width: 768px) {
+  /* line 15, C:/Users/Christina/Documents/GitHub/Task-5/scss/components/_typography.scss */
+  h3 {
+    font-size: 1.3em;
+  }
+}
+
+/* line 22, C:/Users/Christina/Documents/GitHub/Task-5/scss/components/_typography.scss */
+p {
+  font-size: 1.1em;
+  font-weight: 300;
+  line-height: 1.5;
+}
+
+/* line 24, C:/Users/Christina/Documents/GitHub/Task-5/scss/components/_typography.scss */
+.portfolio_wrapper p {
+  margin: 0 auto 50px;
+  width: 75%;
+}
+
+@media (min-width: 768px) {
+  /* line 24, C:/Users/Christina/Documents/GitHub/Task-5/scss/components/_typography.scss */
+  .portfolio_wrapper p {
+    font-size: 0.9em;
+  }
+}
+
+@media (min-width: 1024px) {
+  /* line 24, C:/Users/Christina/Documents/GitHub/Task-5/scss/components/_typography.scss */
+  .portfolio_wrapper p {
+    width: 80%;
+  }
+}
+
+/* line 36, C:/Users/Christina/Documents/GitHub/Task-5/scss/components/_typography.scss */
+a {
+  text-decoration: none;
+  color: black;
+}
+
+/* line 41, C:/Users/Christina/Documents/GitHub/Task-5/scss/components/_typography.scss */
+#toplink {
+  font-size: 1.1em;
+  font-weight: 800;
+  line-height: 1.5;
+  margin: 16px 0;
+  float: right;
+}
+
+@media (min-width: 768px) {
+  /* line 41, C:/Users/Christina/Documents/GitHub/Task-5/scss/components/_typography.scss */
+  #toplink {
+    display: none;
+  }
+}
+
+/* line 50, C:/Users/Christina/Documents/GitHub/Task-5/scss/components/_typography.scss */
+#contact_text {
+  width: 85%;
+  margin: 0 auto 40px;
+  font-size: 1.2em;
+  color: dimgrey;
+}
+
+@media (min-width: 768px) {
+  /* line 50, C:/Users/Christina/Documents/GitHub/Task-5/scss/components/_typography.scss */
+  #contact_text {
+    width: 70%;
+  }
+}
+
+/* line 59, C:/Users/Christina/Documents/GitHub/Task-5/scss/components/_typography.scss */
+.contact_label {
+  font-size: 1.3em;
+  color: dimgrey;
+  margin-right: 20px;
+}
+
+/* line 64, C:/Users/Christina/Documents/GitHub/Task-5/scss/components/_typography.scss */
+.contact_info {
+  font-size: 1.3em;
+  font-weight: 800;
+  color: dimgrey;
+}
+
+/* line 68, C:/Users/Christina/Documents/GitHub/Task-5/scss/components/_typography.scss */
+.footer_name {
+  font-size: 1.1em;
+  font-weight: 800;
+  float: left;
+}
+
+@media (min-width: 768px) {
+  /* line 68, C:/Users/Christina/Documents/GitHub/Task-5/scss/components/_typography.scss */
+  .footer_name {
+    font-size: 0.9em;
+  }
+}
+
+/*# sourceMappingURL=../css/application.map */
