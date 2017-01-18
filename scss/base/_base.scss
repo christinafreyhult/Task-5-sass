@@ -3,11 +3,11 @@ body {
   padding: 0;
   text-align: center;
   font-family: 'Open Sans', sans-serif;
-  background: $light-base;
+  background: $list-background;
     
     ul {
     list-style: none;
-    margin-bottom: 50px;
+    @extend %margin-bottom;
     }
 
     li {
@@ -16,11 +16,11 @@ body {
     margin-bottom: 10px;
     background-color: $light-base;
     a {
-      display: inline-block;
-      font-weight: 700;
-      font-size: 1.2em;
+      @extend %inline-block;
+        //display: inline-block;
+      @include text-styling(1.2em, 700);
       @media #{$medium-screen}{
-        font-size: 1em;
+          @include text-styling(1em);
       }
     }
   }    

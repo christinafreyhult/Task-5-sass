@@ -3,15 +3,14 @@ $medium-screen: '(min-width: 768px)';
 $large-screen:  '(min-width: 1024px)';
 
 //color library
-$dark-base:     black;
-$medium-base:   dimgrey;
-$divider:       lightgrey;
-$list-background: #f7f5f0;
-$light-base:    white;
-$pop:           rosybrown;
+$dark-base:         #000;
+$medium-base:       #696969;
+$divider:           #D3D3D3;
+$list-background:   #f7f5f0;
+$light-base:        #fff;
+$pop:               #bc8f8f;
 
 //mixin for typography
-
 @mixin text-styling($size, $weight:null, $color:null, $height:null){
     font-size: $size;
     font-weight: $weight;

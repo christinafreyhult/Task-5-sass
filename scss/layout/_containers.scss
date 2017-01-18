@@ -2,7 +2,7 @@
     padding-top: 40px;
     padding-bottom: 60px;
     color: $medium-base;
-     @media #{$medium-screen}{
+    @media #{$medium-screen}{
         width: 55%;
         float: left;
         padding-top: 0;
@@ -24,7 +24,7 @@
     
 .col {
     @media #{$medium-screen}{
-        display: inline-block;
+       display: inline-block;
         width: 50%;
         margin-right: -5px;
         vertical-align: top;
@@ -46,10 +46,10 @@
 }
 
 .skill_list {
-    margin-bottom: 50px;
+    @extend %margin-bottom;
 }
 
 .contact_label,
 .contact_info {    
-    display: inline-block;
+    @extend %inline-block;
 }
